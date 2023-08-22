@@ -10,96 +10,128 @@
     />
     <meta name="description" content="Это сайт-резюме Сергея Бойченко" />
     <title>Sergey Bojchenko resume</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <img
-      src="./images/Зображення0165.jpg"
-      alt="Сергей Бойченко фото"
-      width="200px"
-    />
+    <div class="container">
+      <header class="card header">
+        <div class="header-img-container">
+          <img
+            src="./images/Зображення0165.jpg"
+            alt="Сергей Бойченко фото"
+            width="200px"
+            class="my-foto"
+          />
+        </div>
 
-    <h1>Сергей Бойченко</h1>
+        <div class="about-me">
+          <h1 class="about-me-heading">Сергей Бойченко</h1>
 
-    <p>Я начинающий <strong> front-end </strong> разработчик.</p>
-    <p>
-      Я люблю <em>стендовый моделизм, исторический средневековый бой</em> и
-      конечно же <em>программирование.</em>
-    </p>
+          <p class="about-me-text">Я начинающий front-end разработчик.</p>
+          <p class="about-me-text">
+            Я люблю
+            <em>стендовый моделизм, исторический средневековый бой</em> и
+            конечно же <em>программирование.</em>
+          </p>
+        
 
-    <h4>Список социальных сетей:</h4>
+        <div class="social-networks-container">
+          <h4 class="social-networks-heading">Список социальных сетей:</h4>
 
-    <a href="https://www.instagram.com/sergey_bojchenko/" target="_blank"
-      >Instagram</a
-    >
-    |
-    <a href="https://vk.com/a287585672" target="_blank">vkontakte</a>
-    |
-    <a href="https://t.me/Kalinkur" target="_blank">Telegram</a>
+          <a
+            href="#"
+            target="_blank"
+            class="link"
+            >Instagram</a
+          >
+          |
+          <a href="#" target="_blank" class="link"
+            >Vkontakte</a
+          >
+          |
+          <a href="#" target="_blank" class="link"
+            >Telegram</a
+          >
+        </div>
+        </div>
+      </header>
 
-    <h2>Мои Хобби</h2>
+      <div class="card my-hobby">
+        <h2>Мои Хобби</h2>
 
-    <ul>
-      <li>Программирование</li>
-      <li>Исторический средневековый бой</li>
-      <li>Стендовый моделизм</li>
-    </ul>
-
-    <h2>Опыт работы</h2>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Организация</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Сервис-центр "Вега"</td>
-          <td>Мастер по ремонту электронники</td>
-          <td>2006-2010</td>
-        </tr>
-        <tr>
-          <td>ООО "Телекоммуникационные технологии"</td>
-          <td>Монтажник РЭА</td>
-          <td>2011</td>
-        </tr>
-        <tr>
-          <td>Фриланс</td>
-          <td>Дизайнер-ретушер</td>
-          <td>2013 - сейчас</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="">
-      <div>
-        <label for="name"><strong>Ваше имя:</strong></label>
-        <input type="text" id="name" placeholder="Введите имя" />
+        <ul class="list">
+          <li>Программирование</li>
+          <li>Исторический средневековый бой</li>
+          <li>Стендовый моделизм</li>
+        </ul>
       </div>
 
-      <div>
-        <label for="email"><strong>Ваш email:</strong></label>
-        <input type="email" id="email" placeholder="Введите email" />
+      <div class="card work-experience">
+        <h2>Опыт работы</h2>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Организация</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Сервис-центр "Вега"</td>
+              <td>Мастер по ремонту электронники</td>
+              <td>2006-2010</td>
+            </tr>
+            <tr>
+              <td>ООО "Телекоммуникационные технологии"</td>
+              <td>Монтажник РЭА</td>
+              <td>2011</td>
+            </tr>
+            <tr>
+              <td>Фриланс</td>
+              <td>Дизайнер-ретушер</td>
+              <td>2013 - сейчас</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea
-          id="message"
-          cols="30"
-          rows="5"
-          placeholder="Введите сообщение..."
-        ></textarea>
-      </div>
+      
+        
+        <div class="form">
+        <form action="">
+          <h2>Связаться со мной</h2>
 
-      <input type="submit" name="" id="" value="Отправить!" />
-    </form>
+          <div class="form-row">
+          <div class="form-group">
+            <label for="name"><strong>Ваше имя:</strong></label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+
+          <div class="form-group">
+            <label for="email"><strong>Ваш email:</strong></label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            
+            <textarea
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Введите сообщение..."
+            ></textarea>
+            </div>
+          </div>
+
+          <input type="submit" name="" id="" value="Отправить!" class="btn" />
+        </form>
+      
+    </div>
   </body>
 </html>
